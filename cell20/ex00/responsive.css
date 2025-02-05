@@ -1,0 +1,58 @@
+/* ตั้งค่าพื้นฐานให้ตารางแสดงผลตรงกลาง */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%; /* ปรับความกว้างของตารางเป็น 80% ของหน้าจอ */
+    max-width: 800px; /* จำกัดขนาดสูงสุดเพื่อไม่ให้กว้างเกินไป */
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+/* ตั้งค่าสีพื้นหลังของแต่ละกล่อง */
+.box1 {
+    background-color: lightblue;
+}
+
+.box2 {
+    background-color: lightcoral;
+}
+
+/* ทำให้ตารางปรับขนาดสำหรับหน้าจอเล็ก */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%; /* ขยายเต็มหน้าจอสำหรับมือถือ */
+    }
+
+    td {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
