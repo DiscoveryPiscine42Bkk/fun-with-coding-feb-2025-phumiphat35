@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #ft_list {
+            width: 300px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid black;
+            min-height: 100px;
+            text-align: left;
+        }
+        .todo-item {
+            background: lightgray;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">To Do List</div>
+    <button onclick="addTodo()">New</button>
+    <div id="ft_list"></div>
+    
+    <script src="todo.js"></script>
+</body>
+</html>
