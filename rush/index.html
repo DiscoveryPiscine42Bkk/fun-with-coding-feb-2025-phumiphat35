@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .resume-selection {
+    display: flex;
+    justify-content: center; /* จัดเรียงกลาง */
+    align-items: center;
+    gap: 20px; /* ปรับระยะห่างระหว่างรูปภาพ */
+    flex-wrap: nowrap; /* ไม่ให้รูปภาพแยกแถว */
+    margin-top: 30px; /* ลดระยะห่างจากด้านบน */
+}
+
+.resume-image {
+    width: 100%;
+    max-width: 300px; /* กำหนดขนาดสูงสุดของรูปภาพ */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin: 0; /* ลบ margin เพื่อให้รูปภาพติดกัน */
+}
+
+.resume-image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .resume-selection {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .resume-image {
+        width: 90%;
+        max-width: 250px; /* ปรับขนาดในมือถือ */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Showcase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./pwisetra/resume1.html">Resume 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./njungsri/resume2.html">Resume 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container text-center">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Select a resume to view:</p>
+        <div class="resume-selection">
+            <a href="./pwisetra/resume1.html" class="resume-link">
+                <img src="https://scontent.fbkk6-2.fna.fbcdn.net/v/t51.75761-15/472489082_18341354134198817_8509985819258443235_n.jpg?stp=c0.119.1440.1440a_dst-jpg_s206x206_tt6&_nc_cat=106&ccb=1-7&_nc_sid=714c7a&_nc_ohc=GzRLg9GBHoIQ7kNvgHUxZxE&_nc_zt=23&_nc_ht=scontent.fbkk6-2.fna&_nc_gid=A7g2cyNqppuyOqWXmd1ZZsf&oh=00_AYB7--48Kk-ToAuXUo4KwEvlMbYvT6Lf1QIqaGKJLClEdQ&oe=67AC0DC6" alt="Resume 1" class="resume-image">
+            </a>
+            <a href="./njungsri/resume2.html" class="resume-link">
+                <img src="https://scontent.fbkk6-2.fna.fbcdn.net/v/t39.30808-6/463305473_3009767129162957_2985135109064327375_n.jpg?stp=c135.0.690.690a_dst-jpg_s206x206_tt6&_nc_cat=104&ccb=1-7&_nc_sid=50ad20&_nc_ohc=OB_GQz00x9QQ7kNvgFpPPVS&_nc_zt=23&_nc_ht=scontent.fbkk6-2.fna&_nc_gid=AqHLafeJ2DgHYGYHkqApWWL&oh=00_AYAdbcu-CJy5f_5KK9TUDNISVP1p1vkaHtE3634eAs1x0w&oe=67AC0D2B" alt="Resume 2" class="resume-image">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
