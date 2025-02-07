@@ -1,1 +1,1 @@
-ls -p | grep -v '/$\|^\.' | tr '\n' ','
+echo "$(ls -p | grep -v '/$\|^\.' | tr '\n' ',' | sed 's/,$//'),$(basename "$PWD")"
